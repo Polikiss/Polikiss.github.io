@@ -9,13 +9,25 @@
     divination for love, astrology, natal chart ">
     <meta name="author" content="Polina Shevtsova">
     <meta name="application name" content="Tarot Online">
+    <link rel="stylesheet" href="/tarotLove/css/style.css">
+    <style>
+        body {
+            background: #E1F3F7
+        }
+    </style>
+
 </head>
 <body>
 
 <header>
-    <img src="/tarotLove/images/logo.png" alt="Tarot star cards logo"/>
-    <h1>Tarot Love Reading</h1>
-    <h2> <i> determine your future with your partner </i> </h2>
+    <div style="display: inline-block;">
+        <img class="logo" src="/tarotLove/images/logo.png" alt="Tarot star cards logo"/>
+        <section class="mainTitleAndDescription">
+            <h1 class="mainTitle">Tarot Love Reading</h1>
+            <h2 class="mainDescription"> determine your future with your partner </h2>
+        </section>
+    </div>
+
     <nav>
         determine
         card library
@@ -24,46 +36,55 @@
 </header>
 
 <main>
-    <img src="/tarotLove/images/cards.png" alt="Tarot love cards"/>
-    <input type="button" value="determine your fate">
-    <div>
-        <section>
-            <form>
-                <label>Your name
-                    <input type="text">
-                </label>
+    <div class="tarotCardsAndButton">
+        <img class="tarotCards" src="/tarotLove/images/cards.png" alt="Tarot love cards"/>
+        <input class="determineButton" type="button" value="determine your fate">
+    </div>
 
-                <label>Their name
-                    <input type="text">
-                </label>
-            </form>
-        </section>
+    <div class="inputFields">
 
-        <section>
-            <form>
-                <label>Your date of birth
-                    <input type="text">
-                </label>
+        <form class="" action="index.html" method="post">
+            <label for="input">Your name
+            </label>
+            <br>
+            <input type="text" id="input">
+        </form>
 
-                <label>Their date of birth
-                    <input type="text">
-                </label>
-            </form>
-        </section>
+        <form class="" action="index.html" method="post">
+            <label for="input4">Your time of birth
+            </label><br>
+            <input type="text" id="input4">
+        </form>
 
-        <section>
-            <form>
-                <label>Your time of birth
-                    <input type="text">
-                </label>
+        <form class="" action="index.html" method="post">
+            <label for="input6">Your date of birth
+            </label><br>
+            <input type="text" id="input6">
+        </form>
 
-                <label>Their time of birth
-                    <input type="text">
-                </label>
-            </form>
-        </section>
+
+        <form class="" action="index.html" method="post">
+            <label for="input1">Their name
+            </label><br>
+            <input type="text" id="input1">
+        </form>
+
+        <form class="" action="index.html" method="post">
+            <label for="input3">Their date of birth
+            </label><br>
+            <input type="text" id="input3">
+        </form>
+
+        <form class="" action="index.html" method="post">
+            <label for="input5">Their time of birth
+            </label><br>
+            <input type="text" id="input5">
+        </form>
 
     </div>
+
+</main>
+
 <aside>
     <q>
         Мы <sup>не</sup> несем ответсвенность за достоверность информации
@@ -71,11 +92,13 @@
     </q>
 </aside>
 
-</main>
-
-
 <footer>
     <ul>
+        <li>
+            <a href="https://vk.com/feed">
+                <img src="/tarotLove/images/footerLogos/vk.png" alt="vk logo"/>
+            </a>
+        </li>
         <li>
             <img src="/tarotLove/images/footerLogos/phone.png" alt="phone logo"/>
             8-888-888-88-88
@@ -83,11 +106,6 @@
         <li>
             <img src="/tarotLove/images/footerLogos/mail.png" alt="mail logo"/>
             mail@mail.ru
-        </li>
-        <li>
-            <a href="https://vk.com/feed">
-                <img src="/tarotLove/images/footerLogos/vk.png" alt="vk logo"/>
-            </a>
         </li>
         <li>
             <a href="https://siyast.github.io/web/">
