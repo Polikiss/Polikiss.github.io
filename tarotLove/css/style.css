@@ -1,0 +1,102 @@
+.logo {
+    width: 194px;
+    height: 144px;
+    float: left;
+    margin-right: 70px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+
+.mainTitleAndDescription {
+    width: 979px;
+    height: 144px;
+    background: #F7E3EE;
+    border-radius: 20px 20px 20px 20px;
+    float: left;
+    font-family: Arial, serif;
+    margin-top: 30px;
+}
+
+.mainTitle {
+    font-size: 50px;
+    font-weight: normal;
+    color: #B40028;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 270px;
+}
+
+.mainDescription {
+    font-style: italic;
+    color: #670201;
+    margin-left: 260px;
+}
+
+.mainFields{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+    height: 80vh;
+    background: #F7E3EE;
+    border-radius: 20px;
+}
+
+.inputFields {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+    height: 80vh;
+    background: #F7E3EE;
+    border-radius: 20px;
+    column-count: 2;
+}
+
+.tarotCards {
+    width: 652px;
+    height: 469px;
+    justify-content: space-around;
+}
+
+.determineButton {
+    width: 414px;
+    height: 45px;
+    margin-left: 123px;
+    background: #E8B6C2;
+    border-radius: 20px 20px 20px 20px;
+    border: 0;
+    color: #670201;
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+
+
+
+input {
+    background: #E8B6C2;
+    border-radius: 20px;
+    width: 220px;
+    height: 45px;
+    border: 0;
+    margin-bottom: 90px;
+    margin-left: 5vh;
+    margin-top: 10px;
+
+}
+
+label {
+    justify-content: space-between;
+    margin-left: 40px;
+    color: #670201;
+    opacity: .7;
+    font-size: 25px;
+}
+
+main{
+    padding-top: 5vh;
+    column-count: 2;
+}
+
+
+
