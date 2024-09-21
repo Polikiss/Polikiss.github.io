@@ -7,6 +7,7 @@
     margin-top: 30px;
 }
 
+
 .mainTitleAndDescription {
     width: 979px;
     height: 144px;
@@ -32,16 +33,23 @@
     margin-left: 260px;
 }
 
-.tarotCardsAndButton {
+.mainFields{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     width: 45vw;
     height: 80vh;
     background: #F7E3EE;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
 
-
+.inputFields {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+    height: 80vh;
+    background: #F7E3EE;
+    border-radius: 20px;
+    column-count: 2;
 }
 
 .tarotCards {
@@ -62,19 +70,7 @@
     margin-top: -10px;
 }
 
-.inputFields {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 45vw;
-    height: 80vh;
-    background: #F7E3EE;
-    border-radius: 20px;
-    position: relative;
-    column-count: 2;
-    padding: 50px;
 
-}
 
 
 input {
@@ -98,5 +94,9 @@ label {
 }
 
 main{
+    padding-top: 5vh;
     column-count: 2;
 }
+
+
+
