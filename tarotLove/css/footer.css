@@ -2,6 +2,7 @@
     height: 6vh;
     width: 6vh;
     margin-left: 14vw;
+    vertical-align: middle
 
 }
 
@@ -12,4 +13,5 @@ footer{
 
 .contactInfo{
     font-size: 22px;
+    vertical-align: middle
 }

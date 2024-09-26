@@ -1,0 +1,65 @@
+.mainFields{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+    height: 85vh;
+    background: #F7E3EE;
+    border-radius: 20px;
+}
+
+.inputFields {
+    margin: 0 auto;
+    width: 45vw;
+    height: 85vh;
+    background: #F7E3EE;
+    border-radius: 20px;
+    column-count: 2;
+}
+
+.tarotCards {
+    width: 45vw;
+    justify-content: space-around;
+}
+
+.determineButton {
+    width: 30vw;
+    height: 8vh;
+
+    background: #E8B6C2;
+    border-radius: 20px 20px 20px 20px;
+    border: 0;
+    color: #670201;
+    font-size: 2.2vw;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+input {
+    background: #E8B6C2;
+    border-radius: 20px;
+    width: 220px;
+    height: 45px;
+    border: 0;
+    margin-bottom: 90px;
+    margin-left: 5vh;
+    margin-top: 10px;
+
+}
+
+label {
+    justify-content: space-between;
+    margin-left: 40px;
+    color: #670201;
+    opacity: .7;
+    font-size: 25px;
+}
+
+main{
+    padding-top: 5vh;
+    column-count: 2;
+}
+
+

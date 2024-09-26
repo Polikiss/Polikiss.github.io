@@ -5,12 +5,14 @@
     <base href="tarot_love_reading/">
     <meta charset="UTF-8">
     <title>Tarot Love Reading</title>
+    <link rel="icon" href="/tarotLove/images/title.png" type="image">
     <meta name="description" content="tarot love reading, future telling,
     divination for love, astrology, natal chart ">
     <meta name="author" content="Polina Shevtsova">
     <meta name="application name" content="Tarot Online">
     <link rel="stylesheet" href="/tarotLove/css/style.css">
     <link rel="stylesheet" href="/tarotLove/css/footer.css">
+    <link rel="stylesheet" href="/tarotLove/css/main.css">
     <style>
         body {
             background: #E1F3F7
@@ -21,22 +23,24 @@
 <body>
 
 <header>
-    <div style="display: inline-block;">
+    <div class="logoAndTitleAndMenu" style="display: inline-block;">
         <img class="logo" src="/tarotLove/images/logo.png" alt="Tarot star cards logo"/>
-        <section class="mainTitleAndDescription">
-            <h1 class="mainTitle">Tarot Love Reading</h1>
-            <h2 class="mainDescription"> determine your future with your partner </h2>
-        </section>
-    </div>
-</header>
+        <div class="mainTitleAndDescription">
+             <h1 class="mainTitle">Tarot Love Reading</h1>
+        </div>
+        <!-- <img class="menu" src="/tarotLove/images/menu.png" alt="Menu img"/>  -->
+      </div>
+  </header>
 
-<main>
+  <main>
+
     <div class="mainFields">
         <img class="tarotCards" src="/tarotLove/images/cards.png" alt="Tarot love cards"/>
         <input class="determineButton" type="button" value="determine your fate">
+
     </div>
 
-    <div class="inputFields">
+   <div class="inputFields">
 
         <form class="" action="index.html" method="post">
             <label for="input">Your name
@@ -46,17 +50,16 @@
         </form>
 
         <form class="" action="index.html" method="post">
-            <label for="input4">Your time of birth
-            </label><br>
-            <input type="text" id="input4">
-        </form>
-
-        <form class="" action="index.html" method="post">
             <label for="input6">Your date of birth
             </label><br>
             <input type="text" id="input6">
         </form>
 
+       <form class="" action="index.html" method="post">
+           <label for="input4">Your time of birth
+           </label><br>
+           <input type="text" id="input4">
+       </form>
 
         <form class="" action="index.html" method="post">
             <label for="input1">Their name
@@ -78,9 +81,9 @@
 
     </div>
 
-</main>
+  </main>
 
-<footer>
+  <footer>
 
     <a href="https://vk.com/feed">
         <img class="logoRef" src="/tarotLove/images/footerLogos/vk.png" alt="vk logo"/>
@@ -97,7 +100,8 @@
              alt="tarot future telling site logo"/>
     </a>
 
-</footer>
+  </footer>
+
 
 
 </body>
