@@ -1,11 +1,13 @@
 .logoRef {
-    height: 6vh;
     width: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
-.footer {
-    margin-top: 5vh;
+footer {
     display: flex;
     text-align: left;
     align-items: center;
@@ -16,13 +18,90 @@
 }
 
 .ppp{
-    margin-left: 7vw;
-    margin-right: 15vw;
+    margin-left: 10vw;
+    flex-wrap: nowrap
 }
 .contactInfo {
-    margin-top: -10vh;
     font-size: 22px;
     vertical-align: middle;
     margin-right: 10vw;
+    flex-wrap: wrap;
 
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F0FFFF;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    flex-wrap: wrap;
+}
+
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.footer-item1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-left: 2.5vw;
+}
+
+.footer-item2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-right: 150px;
+
+}
+
+.footer-item3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-left: -100px;
+    margin-top: 2vh;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: row;
+        column-count: 2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-item3 {
+        margin-right: 80px;
+        margin-left: -50px;
+        margin-top: 2vh;
+        gap: 20px;
+    }
+
+    .footer-item2{
+        margin-top: 2vh;
+        margin-right: 10.5vw;
+        margin-left: 7vw;
+    }
+
+    .footer-item1{
+        margin-bottom: 2vh;
+    }
+
+    .footer-item {
+        margin-bottom: 10px;
+    }
 }
