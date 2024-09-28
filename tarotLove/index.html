@@ -10,7 +10,7 @@
     divination for love, astrology, natal chart ">
     <meta name="author" content="Polina Shevtsova">
     <meta name="application name" content="Tarot Online">
-    <link rel="stylesheet" href="/tarotLove/css/style.css">
+    <link rel="stylesheet" href="/tarotLove/css/header.css">
     <link rel="stylesheet" href="/tarotLove/css/footer.css">
     <link rel="stylesheet" href="/tarotLove/css/main.css">
     <style>
@@ -23,16 +23,23 @@
 <body>
 
 <header>
-    <div class="logoAndTitleAndMenu" style="display: inline-block;">
-        <img class="logo" src="/tarotLove/images/logo.png" alt="Tarot star cards logo"/>
-        <div class="mainTitleAndDescription">
-             <h1 class="mainTitle">Tarot Love Reading</h1>
-        </div>
-        <!-- <img class="menu" src="/tarotLove/images/menu.png" alt="Menu img"/>  -->
-      </div>
-  </header>
 
-  <main>
+
+    <div class="mainTitleBox">
+        <img class="logo" src="/tarotLove/images/logo.png" alt="Tarot star cards logo"/>
+        <p class="mainTitle">Tarot Love Reading</p>
+        <link rel="icon" href="/tarotLove/images/title.png" type="image">
+        <div class="dropdown">
+            <button id="menu">☰</button>
+            <div class="dropdown-content">
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+<main>
 
     <div class="mainFields">
         <img class="tarotCards" src="/tarotLove/images/cards.png" alt="Tarot love cards"/>
@@ -40,7 +47,7 @@
 
     </div>
 
-   <div class="inputFields">
+    <div class="inputFields">
 
         <form class="" action="index.html" method="post">
             <label for="input">Your name
@@ -55,11 +62,11 @@
             <input type="text" id="input6">
         </form>
 
-       <form class="" action="index.html" method="post">
-           <label for="input4">Your time of birth
-           </label><br>
-           <input type="text" id="input4">
-       </form>
+        <form class="" action="index.html" method="post">
+            <label for="input4">Your time of birth
+            </label><br>
+            <input type="text" id="input4">
+        </form>
 
         <form class="" action="index.html" method="post">
             <label for="input1">Their name
@@ -81,27 +88,23 @@
 
     </div>
 
-  </main>
+</main>
 
-  <footer>
-
-    <a href="https://vk.com/feed">
+<footer>
+    <a class="ppp" href="https://vk.com/feed">
         <img class="logoRef" src="/tarotLove/images/footerLogos/vk.png" alt="vk logo"/>
     </a>
 
     <img class="logoRef" src="/tarotLove/images/footerLogos/phone.png" alt="phone logo"/>
     <span class="contactInfo">+8 (888) 888-88-88 </span>
-
     <img class="logoRef" src="/tarotLove/images/footerLogos/mail.png" alt="mail logo"/>
     <span class="contactInfo">mail@mail.ru</span>
-
-    <a href="https://siyast.github.io/web/">
+    <a class="ppp" href="https://siyast.github.io/web/">
         <img class="logoRef" src="/tarotLove/images/footerLogos/futureTelling.png"
              alt="tarot future telling site logo"/>
     </a>
 
-  </footer>
-
+</footer>
 
 
 </body>

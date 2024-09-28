@@ -1,17 +1,27 @@
-.logoRef{
+.logoRef {
     height: 6vh;
     width: 6vh;
-    margin-left: 14vw;
-    vertical-align: middle
-
 }
 
 
-footer{
-    width:99%;
+.footer {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
-.contactInfo{
+.ppp{
+    margin-left: 7vw;
+    margin-right: 15vw;
+}
+.contactInfo {
+    margin-top: -10vh;
     font-size: 22px;
-    vertical-align: middle
+    vertical-align: middle;
+    margin-right: 10vw;
+
 }

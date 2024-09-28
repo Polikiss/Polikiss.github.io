@@ -5,16 +5,23 @@
     height: 85vh;
     background: #F7E3EE;
     border-radius: 20px;
+    overflow: auto;
 }
 
 .inputFields {
     margin: 0 auto;
     width: 45vw;
     height: 85vh;
+    min-width: 400px;
     background: #F7E3EE;
     border-radius: 20px;
-    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+
 }
+
 
 .tarotCards {
     width: 45vw;
@@ -40,17 +47,19 @@
 input {
     background: #E8B6C2;
     border-radius: 20px;
-    width: 220px;
-    height: 45px;
+    width: 15vw;
+    height: 7vh;
     border: 0;
-    margin-bottom: 90px;
+    display: block;
+    flex-direction: column;
+    <!-- margin-bottom: 10vh;
     margin-left: 5vh;
-    margin-top: 10px;
+    margin-top: 1vh;-->
 
 }
 
 label {
-    justify-content: space-between;
+
     margin-left: 40px;
     color: #670201;
     opacity: .7;
@@ -58,8 +67,34 @@ label {
 }
 
 main{
-    padding-top: 5vh;
+    padding-top: 8vh;
     column-count: 2;
 }
 
 
+@media screen and (max-width: 768px) {
+    main{
+        padding-top: 5vh;
+    }
+
+    .mainFields{
+        margin-left: auto;
+        margin-right: auto;
+        width: 45vw;
+        height: 45vh;
+        background: #F7E3EE;
+        border-radius: 20px;
+    }
+    .inputFields {
+        margin: 0 auto;
+        width: 45vw;
+        height: 45vh;
+        background: #F7E3EE;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: auto;
+
+    }
+}
