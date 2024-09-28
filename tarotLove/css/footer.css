@@ -5,6 +5,7 @@
 
 
 .footer {
+    margin-top: 5vh;
     display: flex;
     text-align: left;
     align-items: center;
