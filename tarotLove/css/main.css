@@ -2,10 +2,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 45vw;
-    height: 85vh;
+    height: auto;
     background: #F7E3EE;
     border-radius: 20px;
     overflow: auto;
+    padding-bottom:2vh;
 }
 
 .input-form {
@@ -18,7 +19,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 45vw;
-    height: 85vh;
+    height: 91vh;
     flex-wrap: wrap;
     min-width: 400px;
     overflow: auto;
@@ -44,9 +45,11 @@
 }
 
 .tarotCards {
-    width: 45vw;
+    display: flex;
+    width: 43vw;
     margin: 0 auto;
-    display: block;
+    margin-top: 3vh;
+    min-width: 300px;
 
 }
 
@@ -62,7 +65,24 @@
     display: block;
 }
 
+.description {
+    font-style: italic;
+    font-size: 20px;
+    color: #670201;
+    width: 40vw;
+    height: 10%;
+    margin-left: 2.5vw;
+    margin-top: 5vh;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #E1F3F7;
+    border-radius: 10px;
+    padding: 5px;
+    word-wrap: break-word;
+    bottom: -18vh;
 
+    border: solid rgba(0,0,0,0.5) ;
+}
 
 
 input {
@@ -79,6 +99,8 @@ input {
 
 }
 
+
+
 label {
 
     margin-left: 40px;
@@ -94,6 +116,8 @@ main{
 }
 
 
+
+
 @media screen and (max-width: 868px) {
     main{
         padding-top: 5vh;
@@ -104,10 +128,10 @@ main{
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-        height: 60vh;
         background: #F7E3EE;
         border-radius: 20px;
         margin-bottom: 7vh;
+        height: auto;
     }
     .input-form{
         margin: 0 auto;
@@ -121,4 +145,12 @@ main{
         overflow: auto;
 
     }
+
+    .description{
+        width: 90%;
+        margin-left: 4%;
+        text-align: center;
+        top:auto;
+        bottom: auto;
+    };
 }
