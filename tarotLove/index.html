@@ -29,7 +29,7 @@
         <p class="mainTitle">Tarot Love Reading</p>
         <link rel="icon" href="/tarotLove/images/title.png" type="image">
         <div class="dropdown">
-            <button id="menu" onclick="myFunction()">☰</button>
+            <button id="menu">☰</button>
             <div class="dropdown-content" id="myDropdown">
                 <a href="index.html" class="tab" data-tab="tab1">Tarot reading</a>
                 <a href="tarotLibrary.html" class="tab" data-tab="tab2">Tarot cards library</a>
@@ -121,4 +121,14 @@
 </footer>
 
 </body>
+
+<script>
+    const dropdown = document.querySelector('.dropdown-content');
+    const menu = document.querySelector('#menu');
+
+    menu.addEventListener('click', function() {
+        dropdown.classList.toggle('open');
+    });
+</script>
+
 </html>
