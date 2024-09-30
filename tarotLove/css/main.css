@@ -1,6 +1,5 @@
 .mainFields{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto;
     width: 45vw;
     height: auto;
     background: #F7E3EE;
@@ -35,6 +34,7 @@
 }
 
 .input-form input {
+    cursor: pointer;
     font-family: 'Courier New', monospace;
     font-size: larger;
     padding: 10px;
@@ -47,8 +47,7 @@
 .tarotCards {
     display: flex;
     width: 43vw;
-    margin: 0 auto;
-    margin-top: 3vh;
+    margin: 3vh auto 0;
     min-width: 300px;
 
 }
@@ -57,12 +56,18 @@
     width: 30vw;
     height: 8vh;
     background: #E8B6C2;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     border: 0;
     color: #670201;
     font-size: 2.2vw;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
+}
+
+.determineButton:hover {
+    background-color: #670201;
+    color: #E8B6C2;
 }
 
 .description {
@@ -80,7 +85,6 @@
     padding: 5px;
     word-wrap: break-word;
     bottom: -18vh;
-
     border: solid rgba(0,0,0,0.5) ;
 }
 
@@ -125,25 +129,14 @@ main{
     }
 
     .mainFields{
-        margin-left: auto;
-        margin-right: auto;
         width: 80%;
         background: #F7E3EE;
-        border-radius: 20px;
         margin-bottom: 7vh;
-        height: auto;
     }
     .input-form{
         margin: 0 auto;
         width: 80%;
         height: 80vh;
-        background: #F7E3EE;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        overflow: auto;
-
     }
 
     .description{

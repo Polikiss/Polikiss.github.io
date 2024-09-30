@@ -12,8 +12,7 @@
     <meta name="application name" content="Tarot Online">
     <link rel="stylesheet" href="/tarotLove/css/header.css">
     <link rel="stylesheet" href="/tarotLove/css/footer.css">
-    <link rel="stylesheet" href="/tarotLove/css/main.css">
-    <link rel="stylesheet" href="/tarotLove/css/table.css">
+    <link rel="stylesheet" href="/tarotLove/css/cardLibraryMain.css">
     <style>
         body {
             background: #E1F3F7
@@ -38,46 +37,20 @@
         </div>
 
     </div>
+    <h3 class="sub-header"> our deck of tarot cards </h3>
 
 </header>
 
 <main>
 
-    <div class="mainFields">
-        <img class="tarotCards" src="/tarotLove/images/cards.png" alt="Tarot love cards"/>
-        <input class="determineButton" type="button" value="determine your fate">
-        <p class="description">
-            Find out your fate with the chosen person
-        </p>
-    </div>
-
-    <div class="input-form">
-        <div>
-            <label for="your-name">Your Name:</label>
-            <input type="text" id="your-name">
-        </div>
-        <div>
-            <label for="their-name">Their Name:</label>
-            <input type="text" id="their-name">
-        </div>
-        <div>
-            <label for="your-birth-date">Your Date of Birth:</label>
-            <input type="date" id="your-birth-date">
-        </div>
-        <div>
-            <label for="their-birth-date">Their Date of Birth:</label>
-            <input type="date" id="their-birth-date">
-        </div>
-        <div>
-            <label for="your-birth-time">Your Time of Birth:</label>
-            <input type="time" id="your-birth-time">
-        </div>
-        <div>
-            <label for="their-birth-time">Their Time of Birth:</label>
-            <input type="time" id="their-birth-time">
+    <div class="container">
+        <h2 class="title">Lovers</h2>
+        <div class="image-container">
+            <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
+            <span class="arrow arrow-left" onclick="prevSlide()"><</span>
+            <span class="arrow arrow-right" onclick="nextSlide()">></span>
         </div>
     </div>
-
 
 </main>
 

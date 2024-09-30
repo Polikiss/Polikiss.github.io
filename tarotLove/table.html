@@ -21,12 +21,14 @@
     </style>
 
 </head>
+
 <body>
 
-<header>
+<header style="display: flex; justify-content: center;">
+
     <div class="mainTitleBox">
         <img class="logo" src="/tarotLove/images/logo.png" alt="Tarot star cards logo"/>
-        <p class="mainTitle">Tarot Love Reading</p>
+        <p class="mainTitle">Manhvas I recommend to read</p>
         <link rel="icon" href="/tarotLove/images/title.png" type="image">
         <div class="dropdown">
             <button id="menu" onclick="myFunction()">☰</button>
@@ -40,47 +42,35 @@
     </div>
 
 </header>
-
-<main>
-
-    <div class="mainFields">
-        <img class="tarotCards" src="/tarotLove/images/cards.png" alt="Tarot love cards"/>
-        <input class="determineButton" type="button" value="determine your fate">
-        <p class="description">
-            Find out your fate with the chosen person
-        </p>
+<main style="display: flex; justify-content: center;">
+<div class="table-container">
+    <div class="table-row table-header">
+        <div class="table-cell">Манхва</div>
+        <div class="table-cell">Моя оценка</div>
+        <div class="table-cell">Описание</div>
     </div>
 
-    <div class="input-form">
-        <div>
-            <label for="your-name">Your Name:</label>
-            <input type="text" id="your-name">
-        </div>
-        <div>
-            <label for="their-name">Their Name:</label>
-            <input type="text" id="their-name">
-        </div>
-        <div>
-            <label for="your-birth-date">Your Date of Birth:</label>
-            <input type="date" id="your-birth-date">
-        </div>
-        <div>
-            <label for="their-birth-date">Their Date of Birth:</label>
-            <input type="date" id="their-birth-date">
-        </div>
-        <div>
-            <label for="your-birth-time">Your Time of Birth:</label>
-            <input type="time" id="your-birth-time">
-        </div>
-        <div>
-            <label for="their-birth-time">Their Time of Birth:</label>
-            <input type="time" id="their-birth-time">
-        </div>
+    <div class="table-row">
+        <div class="table-cell">Мой любимый угнетатель</div>
+        <div class="table-cell">7/10</div>
+        <div class="table-cell">Революция, падшая аристократка, война, фронт, психологические травмы</div>
     </div>
 
+    <div class="table-row">
+        <div class="table-cell">Единственный конец для злодейки - смерть</div>
+        <div class="table-cell">9/10</div>
+        <div class="table-cell">Просто база, выживание, аристократия, магия, Калисто-приколисто</div>
+    </div>
 
+    <div class="table-row">
+        <div class="table-cell">Давайте сменим жанр</div>
+        <div class="table-cell">9/10</div>
+        <div class="table-cell">Тема опекун/ребенок, дестские и взрослые психологические травмы,
+            их преодаление, комедия</div>
+    </div>
+
+</div>
 </main>
-
 <footer>
     <div class="footer">
         <div class="footer-item">
@@ -119,6 +109,5 @@
 
 
 </footer>
-
 </body>
 </html>
