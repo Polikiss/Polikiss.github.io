@@ -78,7 +78,7 @@
     background-color: #ddd;
 }
 
-.dropdown-content .open .menu {
+.dropdown-content.open {
     display: block;
 }
 

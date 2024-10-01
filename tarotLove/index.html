@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/tarotLove/css/footer.css">
     <link rel="stylesheet" href="/tarotLove/css/main.css">
     <link rel="stylesheet" href="/tarotLove/css/table.css">
+    <script src="/tarotLove/js/menu.js"></script>
     <style>
         body {
             background: #E1F3F7
@@ -29,10 +30,10 @@
         <link rel="icon" href="/tarotLove/images/title.png" type="image">
         <div class="dropdown">
             <button class="menu">☰</button>
-            <div class="dropdown-content" id="myDropdown">
-                <a href="/tarotLove/index.html">Tarot reading</a>
-                <a href="/tarotLove/tarotLibrary.html">Tarot cards library</a>
-                <a href="/tarotLove/table.html">Table for lab3</a>
+            <div class="dropdown-content">
+                <a href="index.html">Tarot reading</a>
+                <a href="tarotLibrary.html">Tarot cards library</a>
+                <a href="table.html">Table for lab3</a>
             </div>
         </div>
 
@@ -122,10 +123,10 @@
 </body>
 
 <script>
-    const dropdown = document.querySelector('.dropdown-content');
-    const menu = document.querySelector('#menu');
+    const dropdown = document.querySelector(".dropdown-content");
+    const menu = document.querySelector('.menu');
 
-    menu.addEventListener('click', function() {
+    menu.addEventListener('click', () => {
         dropdown.classList.toggle('open');
     });
 </script>
