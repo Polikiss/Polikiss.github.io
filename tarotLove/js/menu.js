@@ -1,8 +1,20 @@
-const dropdown = document.querySelector('.dropdown-content');
+
 const menu = document.querySelector('.menu');
 
 function toggleDropdown() {
-    dropdown.classList.toggle('open');
+    document.getElementById("dropdown-content").classList.toggle('open');
 }
 
-menu.addEventListener('click', toggleDropdown);
+window.onclick = function (event) {
+    if (!event.target.matches('#menu')) {
+        let i;
+        const dropdown = document.getElementsByClassName("dropdown-content");
+        for (i = 0; i < dropdown.length; i++) {
+            const openDropdown = dropdown[i];
+            if (openDropdown.classList.contains('open')) {
+                openDropdown.classList.remove('open');
+            }
+        }
+    }
+}
+

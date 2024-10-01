@@ -78,6 +78,10 @@
     background-color: #ddd;
 }
 
+.dropdown-content a:active{
+    border-color: #dddddd;
+}
+
 .dropdown-content.open {
     display: block;
 }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/tarotLove/css/header.css">
     <link rel="stylesheet" href="/tarotLove/css/footer.css">
     <link rel="stylesheet" href="/tarotLove/css/cardLibraryMain.css">
+    <script src="js/menu.js"></script>
     <style>
         body {
             background: #E1F3F7
@@ -27,8 +28,8 @@
         <p class="mainTitle">Tarot Love Reading</p>
         <link rel="icon" href="/tarotLove/images/title.png" type="image">
         <div class="dropdown">
-            <button class="menu">☰</button>
-            <div class="dropdown-content">
+            <button class="menu" id="menu" onclick="toggleDropdown()">☰</button>
+            <div class="dropdown-content" id="dropdown-content">
                 <a href="index.html">Tarot reading</a>
                 <a href="tarotLibrary.html">Tarot cards library</a>
                 <a href="table.html">Table for lab3</a>
@@ -94,12 +95,4 @@
 
 </body>
 
-<script>
-    const dropdown = document.querySelector(".dropdown-content");
-    const menu = document.querySelector('.menu');
-
-    menu.addEventListener('click', () => {
-        dropdown.classList.toggle('open');
-    });
-</script>
 </html>
