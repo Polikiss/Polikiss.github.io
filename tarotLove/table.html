@@ -30,11 +30,11 @@
         <p class="mainTitle">Manhvas I recommend to read</p>
         <link rel="icon" href="/tarotLove/images/title.png" type="image">
         <div class="dropdown">
-            <button id="menu" onclick="myFunction()">☰</button>
+            <button class="menu">☰</button>
             <div class="dropdown-content" id="myDropdown">
-                <a href="index.html" class="tab" data-tab="tab1">Tarot reading</a>
-                <a href="tarotLibrary.html" class="tab" data-tab="tab2">Tarot cards library</a>
-                <a href="table.html" class="tab" data-tab="tab3">Table for lab3</a>
+                <a href="index.html">Tarot reading</a>
+                <a href="tarotLibrary.html">Tarot cards library</a>
+                <a href="table.html">Table for lab3</a>
             </div>
         </div>
 
@@ -109,4 +109,13 @@
 
 </footer>
 </body>
+
+<script>
+    const dropdown = document.querySelector('.dropdown-content');
+    const menu = document.querySelector('#menu');
+
+    menu.addEventListener('click', function() {
+        dropdown.classList.toggle('open');
+    });
+</script>
 </html>

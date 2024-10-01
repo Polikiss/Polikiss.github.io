@@ -48,7 +48,7 @@
 }
 
 .dropdown-content {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #F7E3EE;
     min-width: 9vw;
@@ -57,7 +57,7 @@
 }
 
 
-#menu{
+.menu{
     cursor: pointer;
     background-color:  #0000;
     color: #B40028;
@@ -71,7 +71,7 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #0000;
+    color: black;
 }
 
 .dropdown-content a:hover {
