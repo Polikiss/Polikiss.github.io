@@ -16,7 +16,7 @@ window.onclick = function (event) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('.tab');
+    const tabs = document.querySelectorAll('.main-title-box__menu__menu-item__tab');
     const currentLocation = document.location.pathname;
 
 

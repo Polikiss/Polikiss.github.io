@@ -1,11 +1,11 @@
-.logo {
+.main-title-box__logo {
     margin-top: -1vh;
     margin-left: 2.5vw;
     width: 8vw;
     min-width: 100px;
 }
 
-.mainTitleBox {
+.main-title-box {
     width: 100%;
     height: 14vh;
     display: flex;
@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 
-.mainTitle {
+.main-title-box__title {
     font-size: 6vh;
     font-weight: normal;
     color: #B40028;
@@ -30,7 +30,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .mainTitle {
+    .main-title-box__title {
         font-size: 3vh;
         font-weight: normal;
         color: #B40028;
@@ -41,13 +41,13 @@
 
 }
 
-.dropdown {
+.main-title-box__menu {
     position: relative;
     display: inline-block;
     margin-bottom: 40px;
 }
 
-.dropdown-content {
+.main-title-box__menu__menu-item {
     display: none;
     position: absolute;
     background-color: #F7E3EE;
@@ -57,7 +57,7 @@
 }
 
 
-.menu{
+.main-title-box__menu__icon{
     cursor: pointer;
     background-color:  #0000;
     color: #B40028;
@@ -67,25 +67,25 @@
 }
 
 
-.dropdown-content a {
+.main-title-box__menu__menu-item a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: black;
 }
 
-.dropdown-content a:hover {
+.main-title-box__menu__menu-item a:hover {
     background-color: #ddd;
 }
 
-.tab{
+.main-title-box__menu__menu-item__tab{
 }
 
-.tab.active{
+.main-title-box__menu__menu-item__tab.active{
     background-color: #E8B6C2;
 }
 
-.dropdown-content.open {
+.main-title-box__menu__menu-item.open {
     display: block;
 }
 
