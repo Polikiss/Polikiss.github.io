@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     tabs.forEach(tab => {
         const linkUrl = tab.getAttribute('href');
-        if (currentLocation === linkUrl) {
+        const shortLink = currentLocation.split('\\')[2]
+        if (shortLink === linkUrl) {
             tab.classList.add('active');
         } else {
             tab.classList.remove('active')
