@@ -21,14 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     tabs.forEach(tab => {
-        const tabName = tab.getAttribute('data-tab');
-        const tabUrls = {
-            'tab1': '/tarotLove/index.html',
-            'tab2': '/tarotLove/tarotLibrary.html',
-            'tab3': '/tarotLove/table.html'
-        };
-
-        if (currentLocation === tabUrls[tabName]) {
+        const url = tab.getAttribute('href')
+        const fullUrl = '/tarotLove/'.concat(url)
+        if (currentLocation === fullUrl) {
             tab.classList.add('active');
         } else {
             tab.classList.remove('active')
