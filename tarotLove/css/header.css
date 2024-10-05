@@ -78,6 +78,13 @@
     background-color: #ddd;
 }
 
+.tab{
+}
+
+.tab.active{
+    background-color: white;
+}
+
 .dropdown-content a:active{
     border-color: #dddddd;
 }

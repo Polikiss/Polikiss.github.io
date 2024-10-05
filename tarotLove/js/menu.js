@@ -1,14 +1,11 @@
-
-const menu = document.querySelector('.menu');
+const dropdown = document.getElementById("dropdown-content")
 
 function toggleDropdown() {
     document.getElementById("dropdown-content").classList.toggle('open');
 }
-
 window.onclick = function (event) {
     if (!event.target.matches('#menu')) {
         let i;
-        const dropdown = document.getElementsByClassName("dropdown-content");
         for (i = 0; i < dropdown.length; i++) {
             const openDropdown = dropdown[i];
             if (openDropdown.classList.contains('open')) {
@@ -18,3 +15,18 @@ window.onclick = function (event) {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll('.tab');
+    const currentLocation = document.location.pathname;
+
+
+    tabs.forEach(tab => {
+        const linkUrl = tab.getAttribute('href');
+        if (currentLocation === linkUrl) {
+            tab.classList.add('active');
+        } else {
+            tab.classList.remove('active')
+        }
+    });
+
+});
