@@ -21,9 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     tabs.forEach(tab => {
-        const linkUrl = tab.getAttribute('href');
-        const shortLink = currentLocation.split('\\')[2]
-        if (shortLink === linkUrl) {
+        const tabName = tab.getAttribute('data-tab');
+        const tabUrls = {
+            'tab1': '/tarotLove/index.html',
+            'tab2': '/tarotLove/tarotLibrary.html',
+            'tab3': '/tarotLove/table.html'
+        };
+
+        if (currentLocation === tabUrls[tabName]) {
             tab.classList.add('active');
         } else {
             tab.classList.remove('active')
