@@ -82,11 +82,7 @@
 }
 
 .tab.active{
-    background-color: white;
-}
-
-.dropdown-content a:active{
-    border-color: #dddddd;
+    background-color: #E8B6C2;
 }
 
 .dropdown-content.open {
