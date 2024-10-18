@@ -81,7 +81,6 @@ function updateLocalStorage() {
 
     listItems.forEach(item => {
         checkedItems.push({
-            text: item.textContent.replace("\u00D7", ''),
             checked: item.classList.contains("checked")
         });
     });
