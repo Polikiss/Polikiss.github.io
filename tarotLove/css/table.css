@@ -1,7 +1,6 @@
 .table-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое подгонка колонок */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     margin-bottom: 30vh;
 }
 

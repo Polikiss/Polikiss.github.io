@@ -3,6 +3,7 @@ const dropdown = document.getElementById("dropdown-content")
 function toggleDropdown() {
     document.getElementById("dropdown-content").classList.toggle('open');
 }
+
 window.onclick = function (event) {
     if (!event.target.matches('#menu')) {
         let i;
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     tabs.forEach(tab => {
         const url = tab.getAttribute('href')
-        const fullUrl = '/tarotLove/'.concat(url)
+        const fullUrl = '/webTarot/tarotLove/'.concat(url)
         if (currentLocation === fullUrl) {
             tab.classList.add('active');
         } else {
