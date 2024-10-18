@@ -1,43 +1,41 @@
 const list = document.getElementById("ul-task-list");
-list.addEventListener("click", function(event) {
+
+list.addEventListener("click", (event) => {
     if (event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
         updateLocalStorage();
     }
+    if (event.target.classList.contains("close")) {
+        removeItem(event.target.parentElement.textContent);
+        event.target.parentElement.remove();
+    }
 }, false);
 
-
 function newElement() {
-    const inputValue = document.getElementById("myInput").value;
+    const input = document.getElementById("input-task-title").value;
     const li = document.createElement("li");
-    const t = document.createTextNode(inputValue);
-    li.appendChild(t);
+    li.textContent = input;
     document.getElementById("ul-task-list").appendChild(li);
-    document.getElementById("myInput").value = "";
-
+    document.getElementById("input-task-title").value = "";
     addCloseButton(li);
-
     saveList();
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     loadList();
 });
-
 
 function saveList() {
     const items = [];
     const listItems = document.querySelectorAll("#ul-task-list li");
     listItems.forEach(item => {
         items.push({
-            text: item.textContent.replace("\u00D7", ''),
+            text: item.textContent,
             checked: item.classList.contains("checked")
         });
     });
     localStorage.setItem("taskList", JSON.stringify(items));
 }
-
 
 function loadList() {
     const tasks = JSON.parse(localStorage.getItem("taskList")) || [];
@@ -52,38 +50,33 @@ function loadList() {
     });
 }
 
-function removeItem(value) {
+function removeItem(title) {
     const tasks = JSON.parse(localStorage.getItem("taskList")) || [];
-    const updatedTasks = tasks.filter(task => task.text !== value);
-    localStorage.setItem("taskList", JSON.stringify(updatedTasks));
+    const update = tasks.filter(task => task.text !== title);
+    localStorage.setItem("taskList", JSON.stringify(update));
 }
-
 
 function addCloseButton(li) {
     const span = document.createElement("SPAN");
-    const txt = document.createTextNode("\u00D7");
+    const txt = document.createTextNode("x");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
 
     span.onclick = function() {
-        const div = this.parentElement;
-        div.style.display = "none";
-
-        removeItem(div.firstChild.nodeValue);
-        div.remove();
+        this.parentElement.remove();
+        removeItem(this.parentElement.textContent);
     }
 }
 
 function updateLocalStorage() {
     const listItems = document.querySelectorAll("ul li");
     const checkedItems = [];
-
     listItems.forEach(item => {
         checkedItems.push({
+            text: item.textContent,
             checked: item.classList.contains("checked")
         });
     });
-
     localStorage.setItem("taskList", JSON.stringify(checkedItems));
 }
