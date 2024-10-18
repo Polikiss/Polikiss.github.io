@@ -1,5 +1,3 @@
-const dropdown = document.getElementById("dropdown-content")
-
 function toggleDropdown() {
     document.getElementById("dropdown-content").classList.toggle('open');
 }
@@ -7,12 +5,8 @@ function toggleDropdown() {
 window.onclick = function (event) {
     if (!event.target.matches('#menu')) {
         const dropdowns = document.getElementById("dropdown-content");
-        let i;
-        for (i = 0; i < dropdowns.length; i++) {
-            const openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('open')) {
-                openDropdown.classList.remove('open');
-            }
+        if ( dropdowns.classList.contains('open')) {
+            dropdowns.classList.remove('open');
         }
     }
 }
