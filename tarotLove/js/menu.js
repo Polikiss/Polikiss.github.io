@@ -6,7 +6,7 @@ function toggleDropdown() {
 
 window.onclick = function (event) {
     if (!event.target.matches('#menu')) {
-        const dropdowns = document.getElementById("#dropdown-content");
+        const dropdowns = document.getElementById("dropdown-content");
         let i;
         for (i = 0; i < dropdowns.length; i++) {
             const openDropdown = dropdowns[i];
