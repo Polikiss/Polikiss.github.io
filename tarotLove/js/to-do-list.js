@@ -1,5 +1,4 @@
-
-const list = document.querySelector("ul");
+const list = document.getElementById("myUL");
 list.addEventListener("click", function(event) {
     if (event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
