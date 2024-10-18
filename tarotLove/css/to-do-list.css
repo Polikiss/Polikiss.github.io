@@ -92,7 +92,7 @@ input {
 }
 
 /* Style the "Add" button */
-.addBtn {
+.add-task {
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
@@ -105,6 +105,6 @@ input {
     border-radius: 0;
 }
 
-.addBtn:hover {
+.add-task:hover {
     background-color: #bbb;
 }

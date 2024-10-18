@@ -1,4 +1,4 @@
-const list = document.getElementById("myUL");
+const list = document.getElementById("ul-task-list");
 list.addEventListener("click", function(event) {
     if (event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
@@ -12,7 +12,7 @@ function newElement() {
     const li = document.createElement("li");
     const t = document.createTextNode(inputValue);
     li.appendChild(t);
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("ul-task-list").appendChild(li);
     document.getElementById("myInput").value = "";
 
     addCloseButton(li);
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function saveList() {
     const items = [];
-    const listItems = document.querySelectorAll("#myUL li");
+    const listItems = document.querySelectorAll("#ul-task-list li");
     listItems.forEach(item => {
         items.push({
             text: item.textContent.replace("\u00D7", ''),
@@ -44,7 +44,7 @@ function loadList() {
     tasks.forEach(task => {
         const li = document.createElement("li");
         li.textContent = task.text;
-        document.getElementById("myUL").appendChild(li);
+        document.getElementById("ul-task-list").appendChild(li);
         addCloseButton(li);
         if (task.checked) {
             li.classList.add("checked");
