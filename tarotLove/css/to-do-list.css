@@ -1,58 +1,39 @@
-* {
-    box-sizing: border-box;
-}
-
-/* Remove margins and padding from the list */
 ul {
-    margin: 0;
     padding: 0;
+    margin-bottom: 20vh;
 }
 
-/* Style the list items */
+
 ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: #F6E8F3;
     font-size: 18px;
-    transition: 0.2s;
-
-    /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+
 ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #aed9e6;
 }
 
-/* Darker background-color on hover */
 ul li:hover {
     background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
 ul li.checked {
-    background: #888;
-    color: #fff;
+    background: #E8B6C2;
+    color: #670201;
     text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
 ul li.checked::before {
     content: '✔️';
     position: absolute;
     border-color: #E75136;
-    top: 9px;
     left: 16px;
-    height: 15px;
-    width: 10px;
 }
 
-/* Style the close button */
 .close {
     position: absolute;
     right: 0;
@@ -62,47 +43,43 @@ ul li.checked::before {
 
 .close:hover {
     background-color: #f44336;
-    color: white;
+    color: #670201;
 }
 
-/* Style the header */
 .header {
-    background-color: #f44336;
-    padding: 30px 40px;
-    color: white;
+    background-color: #E8B6C2;
+    padding: 30px 20px;
+    color: #670201;
+    font-size: 30px;
     text-align: center;
+    border-radius: 20px 20px 0  0 ;
 }
 
-/* Clear floats after the header */
 .header:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Style the input */
 input {
-    margin: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 20px 0 0 20px;
     width: 75%;
     padding: 10px;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-/* Style the "Add" button */
 .add-task {
     padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    width:20%;
+    background: #F6E8F3;
+    color: #670201;
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
+    border-radius: 0 20px 20px 0;
 }
 
 .add-task:hover {
