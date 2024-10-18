@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="/tarotLove/css/footer.css">
   <link rel="stylesheet" href="/tarotLove/css/to-do-list.css">
   <link href="/tarotLove/footer.html">
-  <script src="js/menu.js" ></script>
-  <script src="js/to-do-list.js" ></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -43,13 +41,13 @@
 </header>
 <main>
   <div id="myDIV" class="header">
-    <h2>My To Do List</h2>
+    <h3>Список дел</h3>
+    <label for="myInput"></label>
     <input type="text" id="myInput" placeholder="Title...">
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
 
   <ul id="myUL">
-    <li class="checked">Pay bills</li>
   </ul>
 
 </main>
@@ -89,5 +87,7 @@
   </div>
 
 </footer>
+<script src="js/to-do-list.js"></script>
+<script src="js/menu.js" ></script>
 </body>
 </html>
