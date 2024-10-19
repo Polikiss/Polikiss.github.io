@@ -28,7 +28,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    content: '✔️';
+    content: '⬤';
     position: absolute;
     border-color: #E75136;
     left: 16px;
