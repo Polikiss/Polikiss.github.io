@@ -42,9 +42,10 @@
 <main>
   <div id="myDIV" class="header">
     <h3>Список дел</h3>
-    <label for="input-task-title"></label>
-    <input type="text" id="input-task-title">
-    <span onclick="newElement()" class="add-task">Добавить</span>
+    <form class ="form" onsubmit="newElement()">
+      <input type="text">
+      <input type="submit" id="input-task-title" class="add-task">
+    </form>
   </div>
 
   <ul id="ul-task-list">
