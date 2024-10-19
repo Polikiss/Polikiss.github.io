@@ -40,17 +40,18 @@
 
 </header>
 <main>
-  <div id="myDIV" class="header">
+  <div id="myDIV" class="task-input">
     <h3>Список дел</h3>
-    <form class ="form" onsubmit="newElement()">
-      <input type="text">
-      <input type="submit" id="input-task-title" class="add-task">
+    <form class ="task-input__form" onsubmit="newElement()">
+      <label>
+        <input type="text">
+      </label>
+      <input type="submit" id="input-task-title" class="task-input__form__add-task">
     </form>
   </div>
 
   <ul id="ul-task-list">
   </ul>
-
 </main>
 <footer>
   <div class="footer">

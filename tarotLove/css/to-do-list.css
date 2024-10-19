@@ -46,7 +46,7 @@ ul li.checked::before {
     color: #670201;
 }
 
-.header {
+.task-input {
     background-color: #E8B6C2;
     padding: 30px 20px;
     color: #670201;
@@ -55,7 +55,7 @@ ul li.checked::before {
     border-radius: 20px 20px 0  0 ;
 }
 
-.header:after {
+.task-input:after {
     content: "";
     display: table;
     clear: both;
@@ -70,7 +70,7 @@ input {
     font-size: 20px;
 }
 
-.add-task {
+.task-input__form__add-task {
     padding: 10px;
     width:20%;
     background: #F6E8F3;
@@ -82,6 +82,6 @@ input {
     border-radius: 0 20px 20px 0;
 }
 
-.add-task:hover {
+.task-input__form__add-task:hover {
     background-color: #bbb;
 }
