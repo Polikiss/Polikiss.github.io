@@ -30,7 +30,7 @@ function saveList() {
     const listItems = document.querySelectorAll("#ul-task-list li");
     listItems.forEach(item => {
         items.push({
-            text: item.textContent,
+            text: item.textContent.replace("\u00D7", ""),
             checked: item.classList.contains("checked")
         });
     });
@@ -58,7 +58,7 @@ function removeItem(title) {
 
 function addCloseButton(li) {
     const span = document.createElement("SPAN");
-    const txt = document.createTextNode("x");
+    const txt = document.createTextNode("\u00D7");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
@@ -74,7 +74,7 @@ function updateLocalStorage() {
     const checkedItems = [];
     listItems.forEach(item => {
         checkedItems.push({
-            text: item.textContent,
+            text: item.textContent.replace("\u00D7", ""),
             checked: item.classList.contains("checked")
         });
     });
