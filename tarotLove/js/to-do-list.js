@@ -69,14 +69,16 @@ function addCloseButton(li) {
     }
 }
 
+
+
 function updateLocalStorage() {
     const listItems = document.querySelectorAll("ul li");
-    const checkedItems = [];
-    listItems.forEach(item => {
-        checkedItems.push({
+    const items = Array.from(listItems).reduce((accumulator, item) => {
+        accumulator.push({
             text: item.textContent.replace("\u00D7", ""),
             checked: item.classList.contains("checked")
         });
-    });
-    localStorage.setItem("taskList", JSON.stringify(checkedItems));
+        return accumulator;
+    }, []);
+    localStorage.setItem("taskList", JSON.stringify(items));
 }
