@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function saveList() {
-    const items = [];
     const listItems = document.querySelectorAll("#ul-task-list li");
-    listItems.forEach(item => {
-        items.push({
+    const items = Array.from(listItems).reduce((accumulator, item) => {
+        accumulator.push({
             text: item.textContent.replace("\u00D7", ""),
             checked: item.classList.contains("checked")
         });
-    });
+        return accumulator;
+    }, []);
     localStorage.setItem("taskList", JSON.stringify(items));
 }
 
