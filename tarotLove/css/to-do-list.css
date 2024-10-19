@@ -31,7 +31,8 @@ ul li.checked::before {
     content: '⬤';
     position: absolute;
     border-color: #E75136;
-    left: 16px;
+    left: 10px;
+    margin-top: -4px;
 }
 
 .close {
