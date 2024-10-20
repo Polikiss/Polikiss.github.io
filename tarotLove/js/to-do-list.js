@@ -54,6 +54,7 @@ function removeItem(title) {
     const tasks = JSON.parse(localStorage.getItem("taskList")) || [];
     const update = tasks.filter(task => task.text !== title);
     localStorage.setItem("taskList", JSON.stringify(update));
+
 }
 
 function addCloseButton(li) {
@@ -64,8 +65,9 @@ function addCloseButton(li) {
     li.appendChild(span);
 
     span.onclick = function() {
-        this.parentElement.remove();
+    this.parentElement.remove();
         removeItem(this.parentElement.textContent);
+        updateLocalStorage();
     }
 }
 
@@ -74,11 +76,13 @@ function addCloseButton(li) {
 function updateLocalStorage() {
     const listItems = document.querySelectorAll("ul li");
     const items = Array.from(listItems).reduce((accumulator, item) => {
-        accumulator.push({
-            text: item.textContent.replace("\u00D7", ""),
-            checked: item.classList.contains("checked")
-        });
-        return accumulator;
+        return [
+            ...accumulator,
+            {
+                text: item.textContent.replace("\u00D7", ""),
+                checked: item.classList.contains("checked")
+            }
+        ];
     }, []);
     localStorage.setItem("taskList", JSON.stringify(items));
 }
