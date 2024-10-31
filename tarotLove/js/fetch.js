@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchTodoList() {
         return new Promise((resolve, reject) => {
 
-            fetch('https://jsonpaceholder.typicode.com/todos')
+            fetch('https://jsonplaceholder.typicode.com/todos')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Error');
