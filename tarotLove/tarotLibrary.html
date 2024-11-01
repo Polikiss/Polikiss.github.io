@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/tarotLove/css/header.css">
     <link rel="stylesheet" href="/tarotLove/css/footer.css">
     <link rel="stylesheet" href="/tarotLove/css/card-library-main.css">
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <script src="js/menu.js" ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -38,14 +40,26 @@
 </header>
 
 <main>
+    <div class="glide-container" data-glide-autoplay="5000" data-glide-type="carousel">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
 
-    <div class="container">
-        <h2 class="title">Lovers</h2>
-        <div class="image-container">
-            <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
-            <span class="arrow arrow-left" onclick="prevSlide()"><</span>
-            <span class="arrow arrow-right" onclick="nextSlide()">></span>
+                <li class="glide__slide">
+                    <img class="image" src="/tarotLove/images/tarotCards/fool.png" alt="Lovers">
+                </li>
+                <li class="glide__slide">
+                    <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
+                </li>
+                <li class="glide__slide">
+                    <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
+                </li>
+            </ul>
         </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__prev">Предыдущий</button>
+            <button class="glide__next">Следующий</button>
+        </div>
+        <div class="glide__bullets" data-glide-el="bullets" data-glide-bullet="li"></div>
     </div>
 
 </main>
@@ -88,7 +102,7 @@
 
 
 </footer>
-
+<script src="js/cards.js" ></script>
 </body>
 
 </html>

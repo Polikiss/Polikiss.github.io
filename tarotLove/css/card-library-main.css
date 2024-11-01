@@ -61,3 +61,55 @@ main {
 .arrow-right {
     right: 1vw;
 }
+
+.glide-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: 400px; /* Задайте желаемую высоту */
+    object-fit: cover;
+}
+
+.glide__arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; /* Разместите стрелки поверх слайдов */
+}
+
+.glide__prev, .glide__next {
+    background-color: #ccc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Добавьте скругленные углы */
+}
+
+.glide__bullets {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.glide__bullet {
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.glide__bullet.glide__bullet--active {
+    background-color: #007bff; /* Активный индикатор */
+}
