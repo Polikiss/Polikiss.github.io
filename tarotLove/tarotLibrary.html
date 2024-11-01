@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <script src="js/menu.js" ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -40,27 +46,31 @@
 </header>
 
 <main>
-    <div class="glide-container" data-glide-autoplay="5000" data-glide-type="carousel">
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img class="image" src="/tarotLove/images/tarotCards/strength.png" alt="strength">
+            </div>
+            <div class="swiper-slide">
+                <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
+            </div>
+            <div class="swiper-slide">
+                <img class="image" src="/tarotLove/images/tarotCards/empress.png" alt="empress">
+            </div>
+            <div class="swiper-slide">
+                <img class="image" src="/tarotLove/images/tarotCards/fool.png" alt="fool">
+            </div>
 
-                <li class="glide__slide">
-                    <img class="image" src="/tarotLove/images/tarotCards/fool.png" alt="Lovers">
-                </li>
-                <li class="glide__slide">
-                    <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
-                </li>
-                <li class="glide__slide">
-                    <img class="image" src="/tarotLove/images/tarotCards/lovers.png" alt="Lovers">
-                </li>
-            </ul>
         </div>
-        <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__prev">Предыдущий</button>
-            <button class="glide__next">Следующий</button>
-        </div>
-        <div class="glide__bullets" data-glide-el="bullets" data-glide-bullet="li"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/cards.js">
+    </script>
 
 </main>
 
@@ -102,7 +112,7 @@
 
 
 </footer>
-<script src="js/cards.js" ></script>
+
 </body>
 
 </html>

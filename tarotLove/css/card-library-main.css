@@ -8,108 +8,72 @@
     height: auto;
     font-family: SansSerif, serif;
 }
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    font-family: Arial, sans-serif;
-    margin: 0 0 20vh;
-}
+main{
 
-.container {
-    background-color: #F6E8F3;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
-
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #670201;
-    margin-bottom: 20px;
-}
-
-.image-container {
-    position: relative;
-    width: 30vw;
-    min-width: 250px;
-    height: auto;
-    margin: 0 auto 20px;
-}
-
-.image {
-    width: 70%;
-    min-width: 200px;
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: #670201;
-    cursor: pointer;
-}
-
-.arrow-left {
-    left: 1vw;
-}
-
-.arrow-right {
-    right: 1vw;
-}
-
-.glide-container {
+.swiper-container {
     width: 80%;
+    height: 400px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40vh;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.glide__slide img {
-    width: 100%;
-    height: 400px; /* Задайте желаемую высоту */
+.swiper-slide img {
+    width: 30vh;
     object-fit: cover;
+    margin-left: 20%;
+    z-index: 2;
+
 }
 
-.glide__arrows {
+.swiper-pagination {
     position: absolute;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1; /* Разместите стрелки поверх слайдов */
 }
 
-.glide__prev, .glide__next {
+.swiper-pagination-bullet {
     background-color: #ccc;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Добавьте скругленные углы */
-}
-
-.glide__bullets {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.glide__bullet {
-    background-color: #ccc;
+    opacity: 1;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 10;
 }
 
-.glide__bullet.glide__bullet--active {
-    background-color: #007bff; /* Активный индикатор */
+.swiper-pagination-bullet-active {
+    background-color: #670201;;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+    background-color: #ccc;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.swiper-button-prev {
+    margin-left: -40px;
+    left: 100px;
+}
+
+.swiper-button-next {
+    margin-right: -40px;
+    right: 100px;
 }
