@@ -21,7 +21,7 @@ const swiper = new Swiper('.swiper-container', {
         // Автопрокрутка работает даже при взаимодействии пользователя
         disableOnInteraction: false
     },
-    // Пагинация (индикаторы слайдов)
+    // Пагинация
     pagination: {
         // Элемент DOM, где будет размещена пагинация
         el: '.swiper-pagination',
