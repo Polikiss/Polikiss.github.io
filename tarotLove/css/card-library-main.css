@@ -8,8 +8,14 @@
     height: auto;
     font-family: SansSerif, serif;
 }
-main{
-
+.card-description{
+    white-space: pre-wrap;
+    font-size: 3vh;
+    font-style: italic;
+    color: #670201;
+    margin-top: 7vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 .swiper-container {
     width: 80%;
@@ -17,7 +23,7 @@ main{
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    margin-bottom: 40vh;
+    margin-bottom: 100vh;
 }
 .swiper-slide{
     display: flex;
@@ -51,12 +57,12 @@ main{
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #670201;;
+    background-color: #670201;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: white;
+    color: #670201;
     background-color: #ccc;
     padding: 10px;
     border: none;
