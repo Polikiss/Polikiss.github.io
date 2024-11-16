@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
     const todoListContainer = document.getElementById('ul-task-list');
@@ -32,24 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchTodoList() {
-        return new Promise((resolve, reject) => {
-
-            fetch('https://jsonplaceholder.typicode.com/todos')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Error');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const filteredData = data.filter(filterCondition);
-                    resolve(filteredData);
-                })
-                .catch(error => reject(error));
-
-        });
+        return fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error');
+                }
+                return response.json();
+            })
+            .then(data => data.filter(filterCondition));
     }
-
 
     function loadTodoList() {
         if(preloader.classList.contains('hidden')){
@@ -70,8 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     preloader.classList.add('hidden')
                 }
             });
-
-
     }
 
     loadTodoList();
